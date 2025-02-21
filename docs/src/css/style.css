@@ -891,6 +891,14 @@ section#discografia {
   }
 }
 
+@media (max-width: 1448px) {
+  section#discografia {
+    .wrapper {
+      gap: 2.5rem;
+    }
+  }
+}
+
 @media (max-width: 450px) {
   section#discografia {
     padding-top: 1rem;
