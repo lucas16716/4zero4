@@ -329,8 +329,14 @@ header.scrolled {
     z-index: 15;
     transition: transform 0.3s ease-in-out;
     transform: translateX(0);
-    width: 25vw;
+    width: 35vw;
     height: 100vh;
+    padding-bottom: 80px;
+
+    a {
+      font-size: 2.4rem;
+      padding-bottom: 10px;
+    }
   }
 
   /* Menu móvel: nav-links */
@@ -347,7 +353,12 @@ header.scrolled {
     padding: 1rem;
     gap: 1rem;
     z-index: 15;
-    width: 25vw;
+    width: 35vw;
+
+    a {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
   }
 
   /* Oculta o input de toggle */
@@ -376,18 +387,18 @@ header.scrolled {
 }
 
 /* Breakpoint: 750px a 979px – aumenta a largura para 50vw */
-@media (max-width: 979px) and (min-width: 400px) {
+@media (min-width: 410px) and (max-width: 800px) {
   #menu-toggle:checked ~ .nav-ul,
   #menu-toggle:checked ~ .nav-links {
-    width: 60vw;
+    width: 65vw;
   }
 }
 
 /* Breakpoint: até 749px – menu ocupa 100vw */
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   #menu-toggle:checked ~ .nav-ul,
   #menu-toggle:checked ~ .nav-links {
-    width: 100vw;
+    width: 100%;
   }
 }
 
