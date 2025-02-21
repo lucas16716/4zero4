@@ -271,6 +271,10 @@ header.scrolled {
   }
 }
 
+.menu-toggle-btn {
+  display: none;
+}
+
 @media (max-width: 1380px) {
   /* Oculta os menus desktop */
   header nav .nav-ul,
