@@ -18,7 +18,7 @@
 
 <h2 id="projeto">PROJETO</h2>
 
-- 🌐 <a href="https://4zero4.vercel.app/">Acesse e confira o website</a>
+- 🌐 <a href="https://4zero4.vercel.app/">Acesse o Website</a>
 - 🖼️ <a href="https://www.canva.com/design/DAGY7iketpE/JNfAb-wEfukJ3xBHZ62Iew/view?utm_content=DAGY7iketpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h52de8cf561">Prototipagem do Projeto</a>
 
 <h2 id="funcionalidades">FUNCIONALIDADES</h2>
