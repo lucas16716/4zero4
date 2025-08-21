@@ -76,4 +76,4 @@ Todos os direitos sobre conteúdo visual e textual pertencem exclusivamente à b
 É proibida a cópia, reprodução ou uso do conteúdo sem autorização expressa.</p>
 
 <h2>🧑🏻‍💻 AUTOR</h2> 
-<p>Desenvolvido por <a href="https://lucaslinkverse.vercel.app/">Lucas Code</a>.</p>
+<p>Desenvolvido por <a href="https://bio.site/lucascode">Lucas Code</a>.</p>
