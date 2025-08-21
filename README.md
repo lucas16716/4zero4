@@ -33,12 +33,13 @@
 
 <h2 id="tecnologias-e-ferramentas">TECNOLOGIAS E FERRAMENTAS</h2>
 
-- **HTML5:** Estrutura semântica;
-- **CSS3:** Estilização visual;
-- **JavaScript:** interatividade e lógica;
-- **Git/GitHub:** Versionamento de código e hospedagem;
-- **Vercel:** Deploy oficial do site;
-- **Canva:** Prototipagem e layout.
+- **HTML5 →** Estrutura semântica;
+- **CSS3 →** Estilização visual;
+- **JavaScript →** interatividade e lógica;
+- **Git/GitHub →** Versionamento de código e hospedagem;
+- **Vercel →** Deploy oficial do site;
+- **Formspree →** Integração de formulário para envio de mensagens;
+- **Canva →** Prototipagem e layout.
 
 ---
 
