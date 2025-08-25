@@ -7,7 +7,7 @@
 
 </div>
 
-> Website oficial da **Banda 4zero4!**, desenvolvido por mim com foco em **design visual, performance, acessibilidade e escalabilidade**. O projeto é **público para fins de portfólio**, mas o conteúdo é exclusivo da banda, com imagens, textos, vídeos e identidade visual próprios.
+> Website oficial da banda **4zero4!**, desenvolvido em formato OnePage com foco em **acessibilidade, SEO, performance e escalabilidade**. O projeto tem como objetivo centralizar todas as informações principais da banda e meios de contato em uma navegação fluida e intuitiva, fortalecendo a presença digital da banda.
 
 <p align="center">
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
