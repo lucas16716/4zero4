@@ -8,7 +8,7 @@
 
 </div>
 
-**Website OnePage da banda 4zero4! (v2.0)**, projetado para fortalecer a presença digital da banda, centralizando todas as informações principais e meios de contatos em uma navegação fluida e intuitiva. Esta versão foi **completamente refatorada** com foco em **Performance, Acessibilidade (A11y) e SEO Técnico**.
+**Website da banda 4zero4!**, projetado em formato OnePage, com o objetivo de fortalecer a presença digital da banda, centralizando todas as informações principais e meios de contatos em uma navegação fluida e intuitiva.
 
 <p align="center">
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -19,7 +19,7 @@
 
 <h2 id="projeto">PROJETO</h2>
 
-> O objetivo desta refatoração (v2.0) foi transformar um código de iniciante em um **case de nível profissional**, aplicando as melhores práticas de desenvolvimento front-end, conforme minha expansão de conhecimentos e habilidades técnicas na programação.
+> O objetivo desta refatoração (v2.0) foi transformar um código de iniciante em um **case de nível profissional**, aplicando as melhores práticas de desenvolvimento front-end, focado em **Performance, Acessibilidade (A11y) e SEO Técnico**, conforme minha expansão de conhecimentos e habilidades técnicas na programação.
 
 - 🌐 <a href="https://4zero4.vercel.app/">Acesse o Website</a>
 - 🖼️ <a href="https://www.canva.com/design/DAGY7iketpE/JNfAb-wEfukJ3xBHZ62Iew/view?utm_content=DAGY7iketpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h52de8cf561">Prototipagem do Projeto</a>
