@@ -1,45 +1,47 @@
 <h1 align="center">4zero4! 🎸</h1>
 
 <div>
-  
+  
 [![License](https://img.shields.io/badge/Licença-Personalizada-blue)](./LICENSE)&nbsp;&nbsp;
-[![Status](https://img.shields.io/badge/Status-Desenvolvendo_versão_2.0-pink)]()
+[![Status](https://img.shields.io/badge/Status-Finalizado%20(v2.0)-brightgreen)]()&nbsp;&nbsp;
+[![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-pink)](https://4zero4.vercel.app/)
 
 </div>
 
-> Website oficial da banda **4zero4!**, desenvolvido em formato OnePage com foco em **acessibilidade, SEO, performance e escalabilidade**. O projeto tem como objetivo centralizar todas as informações principais da banda e meios de contato em uma navegação fluida e intuitiva, fortalecendo a presença digital da banda.
+**Website OnePage da banda 4zero4! (v2.0)**, projetado para fortalecer a presença digital da banda, centralizando todas as informações principais e meios de contatos em uma navegação fluida e intuitiva. Esta versão foi **completamente refatorada** com foco em **Performance, Acessibilidade (A11y) e SEO Técnico**.
 
 <p align="center">
-  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tecnologias-e-ferramentas">Tecnologias e Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#estruturação-do-projeto">Guia Repositório</a>
+  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-e-ferramentas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#estrutura-do-projeto">Estrutura</a>
 </p>
 
 <h2 id="projeto">PROJETO</h2>
+
+> O objetivo desta refatoração (v2.0) foi transformar um código de iniciante em um **case de nível profissional**, aplicando as melhores práticas de desenvolvimento front-end, conforme minha expansão de conhecimentos e habilidades técnicas na programação.
 
 - 🌐 <a href="https://4zero4.vercel.app/">Acesse o Website</a>
 - 🖼️ <a href="https://www.canva.com/design/DAGY7iketpE/JNfAb-wEfukJ3xBHZ62Iew/view?utm_content=DAGY7iketpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h52de8cf561">Prototipagem do Projeto</a>
 
 <h2 id="funcionalidades">FUNCIONALIDADES</h2>
 
-- 🎤 Apresentação da banda e seus integrantes;
-- 💽 Apresentação da discografia da banda;
-- 📆 Divulgação de shows e agenda;
-- 🎥 Galeria com fotos, vídeos e materiais promocionais;
-- 📞 Espaço para contato via formulário;
-- 📱 Design responsivo, com navegação acessível, fluida e interativa;
-- 🚀 Projeto escalável com versão 2.0 em desenvolvimento.
+- 🎬 **Vídeo de Fundo (seção Home):** Otimizado com `preload` para melhor performance.
+- 🎤 **Cards Interativos:** Apresentação dos integrantes, discografia e agenda de shows.
+- 📸 **Galeria de Fotos:** Com transição _fade_ suave e navegação completa por clique e teclado.
+- 📞 **Formulário de Contato:** Funcional e integrado com Formspree.
+- 📱 **Responsividade:** Design adaptável a todos os dispositivos.
+- ♿ **Acessibilidade (A11y):** Navegação por teclado, `aria-labels` e estrutura semântica.
+- 👀 **Reveal-on-Scroll:** Animações de carregamento de seção usando `IntersectionObserver.
 
 <h2 id="tecnologias-e-ferramentas">TECNOLOGIAS E FERRAMENTAS</h2>
 
-- **HTML5 →** Estrutura semântica;
-- **CSS3 →** Estilização visual;
-- **JavaScript →** interatividade e lógica;
-- **Git/GitHub →** Versionamento de código e hospedagem;
-- **Vercel →** Deploy oficial do site;
-- **Formspree →** Integração de formulário para envio de mensagens;
-- **Canva →** Prototipagem e layout.
+- **HTML5 →** Estrutura semântica, acessível e otimizada para SEO com JSON-LD.
+- **CSS3 →** Estilização moderna (CSS Nesting, Variáveis Globais), animações 3D (`transform`) e responsividade.
+- **JavaScript (ES6+) →** Código (Vanilla JS) para todas as interatividades (menu, galeria, formulário, reveal) e manipulação do DOM.
+- **Git/GitHub →** Versionamento de código.
+- **Vercel →** Deploy oficial do site com otimização e minificação automáticas.
+- **Formspree →** Integração do formulário de contato.
 
 ---
 
@@ -49,21 +51,19 @@
 📁 4ZERO4
 ├── 📁 docs
 │   ├── 📂 assets
-│   │   ├── 📁 docs            # Arquivos do projeto
-│   │   ├── 📁 fonts           # Fontes do projeto
-│   │   ├── 📁 img             # Imagens do projeto separadas por pastas de cada seção
-│   │   └── 📁 videos          # Vídeos do projeto
-│   │
+│   │   ├── 📁 docs            # Arquivos (Press Kit)
+│   │   ├── 📁 fonts           # Fontes
+│   │   ├── 📁 img             # Imagens (separadas por seção)
+│   │   └── 📁 videos          # Vídeos
 │   ├── 📂 src
 │   │   ├── 📂 css
-│   │   │   └── style.css       # Código CSS para estilização geral do projeto
+│   │   │   └── style.css       # Código CSS para estilização do projeto
 │   │   └── 📂 js
 │   │       ├── form.js         # Código JS para funcionalidade do formulário
 │   │       ├── gallery.js      # Código JS para funcionalidade da galeria de fotos
-│   │       ├── menu.js         # Código JS para funcionalidade do menu
+│   │       ├── menu.js         # Código JS para funcionalidade do menu e header
 │   │       └── reveal.js       # Código JS para funcionalidade do reveal do conteúdo
 │   └── index.html              # Página principal
-│
 ├── README.md                   # Documentação
 └── LICENSE                     # Licença
 

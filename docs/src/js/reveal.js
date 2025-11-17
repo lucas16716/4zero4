@@ -1,28 +1,26 @@
+"use strict";
 document.addEventListener("DOMContentLoaded", () => {
-  ScrollReveal().reveal("#reveal", {
-    distance: "50px", // Distância da animação
-    duration: 2500, // Duração da animação (ms)
-    easing: "ease-in-out", // Curva de animação
-    origin: "bottom", // Origem do movimento (top, left, right, bottom)
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  ScrollReveal().reveal("#p-reveal", {
-    distance: "50px", // Distância da animação
-    duration: 2500, // Duração da animação (ms)
-    easing: "ease-in-out", // Curva de animação
-    origin: "bottom", // Origem do movimento (top, left, right, bottom)
-  });
-});
-
-// Reveal para o background img da seção banda
-window.addEventListener("scroll", function () {
+  const revealFromBottomElements = document.querySelectorAll(
+    ".js-reveal-from-bottom"
+  );
   const bandaSection = document.getElementById("banda");
-  const rect = bandaSection.getBoundingClientRect();
-
-  // Verifica se a seção está visível na tela
-  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-    bandaSection.classList.add("reveal"); // Adiciona a classe quando a seção aparece
+  const revealObserverOptions = { root: null, threshold: 0.1 };
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target.id === "banda") {
+          entry.target.classList.add("reveal");
+        } else {
+          entry.target.classList.add("is-visible");
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, revealObserverOptions);
+  revealFromBottomElements.forEach((el) => {
+    revealObserver.observe(el);
+  });
+  if (bandaSection) {
+    revealObserver.observe(bandaSection);
   }
 });
