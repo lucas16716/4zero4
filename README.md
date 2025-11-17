@@ -3,7 +3,7 @@
 <div>
 
 [![License](https://img.shields.io/badge/Licença-Personalizada-yellow)](./LICENSE)&nbsp;&nbsp;
-[![Status](<https://img.shields.io/badge/Status-Finalizado-(v2.0)-blue>)]()&nbsp;&nbsp;
+[![Status](<https://img.shields.io/badge/Status-Finalizado (v2.0)-blue>)]()&nbsp;&nbsp;
 [![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-pink)](https://4zero4.vercel.app/)
 
 </div>
