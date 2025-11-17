@@ -289,7 +289,8 @@ header {
   }
 
   &:hover .dropdown-menu,
-  &:focus-within .dropdown-menu {
+  &:focus-within .dropdown-menu,
+  &.active .dropdown-menu {
     display: block;
   }
 }

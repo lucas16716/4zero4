@@ -9,22 +9,28 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
   const backToTopLinks = document.querySelectorAll(".back-to-top");
+  const menuToggleCheckbox = document.getElementById("menu-toggle");
+  const mobileMenuLinks = document.querySelectorAll('.nav-ul a[href^="#"]');
+  const dropdownLi = document.querySelector(".nav-item-dropdown");
+  const dropdownLink = dropdownLi ? dropdownLi.querySelector("a") : null;
   const SCROLL_OFFSET = 50;
   function removeAllClickedClasses() {
     navItems.forEach((link) => link.classList.remove("clicked"));
-    dropdownParent.classList.remove("clicked");
+    if (dropdownParent) dropdownParent.classList.remove("clicked");
   }
   function handleNavLinkClick(event) {
     event.preventDefault();
     const link = event.currentTarget;
-    const targetId = link.getAttribute("href").substring(1);
+    const href = link.getAttribute("href");
+    if (!href || !href.startsWith("#")) return;
+    const targetId = href.substring(1);
     const targetSection = document.getElementById(targetId);
     if (!targetSection) return;
     const targetPosition = targetSection.offsetTop - SCROLL_OFFSET;
     window.scrollTo({ top: targetPosition, behavior: "smooth" });
     removeAllClickedClasses();
     if (link.closest(".dropdown-menu")) {
-      dropdownParent.classList.add("clicked");
+      if (dropdownParent) dropdownParent.classList.add("clicked");
     } else {
       link.classList.add("clicked");
     }
@@ -46,7 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (activeLink) {
           activeLink.classList.add("clicked");
         }
-        if (targetId === "banda" || targetId === "integrantes") {
+        if (
+          (targetId === "banda" || targetId === "integrantes") &&
+          dropdownParent
+        ) {
           dropdownParent.classList.add("clicked");
         }
       }
@@ -75,14 +84,28 @@ document.addEventListener("DOMContentLoaded", () => {
   backToTopLinks.forEach((link) =>
     link.addEventListener("click", handleBackToTopClick)
   );
-});
-const menuToggleCheckbox = document.getElementById("menu-toggle");
-const mobileMenuLinks = document.querySelectorAll('.nav-ul a[href^="#"]');
-function closeMobileMenu() {
-  if (menuToggleCheckbox.checked) {
-    menuToggleCheckbox.checked = !1;
+  if (dropdownLi && dropdownLink) {
+    dropdownLink.addEventListener("click", (event) => {
+      if (window.innerWidth <= 1380) {
+        event.preventDefault();
+        dropdownLi.classList.toggle("active");
+      }
+    });
+    document.addEventListener("click", (event) => {
+      if (!dropdownLi.contains(event.target)) {
+        dropdownLi.classList.remove("active");
+      }
+    });
   }
-}
-mobileMenuLinks.forEach((link) => {
-  link.addEventListener("click", closeMobileMenu);
+  function closeMobileMenu() {
+    if (menuToggleCheckbox && menuToggleCheckbox.checked) {
+      menuToggleCheckbox.checked = !1;
+    }
+  }
+  mobileMenuLinks.forEach((link) => {
+    if (link.parentElement.classList.contains("nav-item-dropdown")) {
+      return;
+    }
+    link.addEventListener("click", closeMobileMenu);
+  });
 });
