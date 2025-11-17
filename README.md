@@ -1,9 +1,9 @@
 <h1 align="center">4zero4! 🎸</h1>
 
 <div>
-  
-[![License](https://img.shields.io/badge/Licença-Personalizada-green)](./LICENSE)&nbsp;&nbsp;
-[![Status](https://img.shields.io/badge/Status-Finalizado-(v2.0)-blue)]()&nbsp;&nbsp;
+
+[![License](https://img.shields.io/badge/Licença-Personalizada-yellow)](./LICENSE)&nbsp;&nbsp;
+[![Status](<https://img.shields.io/badge/Status-Finalizado-(v2.0)-blue>)]()&nbsp;&nbsp;
 [![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-pink)](https://4zero4.vercel.app/)
 
 </div>
