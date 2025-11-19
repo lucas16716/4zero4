@@ -37,7 +37,7 @@
   --fs-xl: 1.5rem;
   --fs-xxl: 2rem;
   --fs-display-sm: 4rem;
-  --fs-display-md: 5.5rem;
+  --fs-display-md: 5rem;
   --fs-contact: 4.2rem;
 
   /* Espaçamento */
@@ -162,11 +162,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.7rem 3.5rem;
+    padding: 0.8rem 3.3rem;
     transition: all var(--transition-medium);
 
     img {
-      max-width: clamp(110px, 9vw, 150px);
+      max-width: clamp(90px, 8vw, 130px);
       height: auto;
       filter: invert(52%) sepia(27%) saturate(1137%) hue-rotate(285deg)
         brightness(80%) contrast(81%) drop-shadow(2px 2px 2px #00000080);
@@ -1425,7 +1425,7 @@ footer {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: var(--fs-xxl);
+    font-size: var(--fs-xl);
     color: var(--color-primary);
   }
 
@@ -1447,7 +1447,7 @@ footer {
 
     a {
       padding-bottom: 10px;
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
   }
 
@@ -1467,7 +1467,7 @@ footer {
 
     a {
       margin-bottom: 10px;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 

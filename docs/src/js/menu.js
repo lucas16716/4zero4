@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuLinks = document.querySelectorAll('.nav-ul a[href^="#"]');
   const dropdownLi = document.querySelector(".nav-item-dropdown");
   const dropdownLink = dropdownLi ? dropdownLi.querySelector("a") : null;
-  const SCROLL_OFFSET = 50;
+  const SCROLL_OFFSET = 45;
   function removeAllClickedClasses() {
     navItems.forEach((link) => link.classList.remove("clicked"));
     if (dropdownParent) dropdownParent.classList.remove("clicked");
