@@ -1387,7 +1387,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0.7rem var(--space-lg);
+    padding: 0.9rem var(--space-lg);
 
     .nav-ul,
     .nav-links {
@@ -1408,8 +1408,8 @@ footer {
   .menu-toggle-btn {
     display: block;
     position: fixed;
-    top: 1.5rem;
-    right: 1.8rem;
+    top: 1.7rem;
+    right: 2rem;
     z-index: var(--z-toggle-btn);
     font-size: 1.7rem;
     color: var(--color-primary);
