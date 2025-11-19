@@ -1439,7 +1439,7 @@ footer {
     width: 35vw;
     height: 100vh;
     padding: var(--space-sm);
-    padding-bottom: 80px;
+    padding-bottom: 150px;
     gap: var(--space-md);
     background: var(--color-bg);
     transform: translateX(0);
@@ -1631,7 +1631,7 @@ footer {
 /* Breakpoint Pequeno: Título da Seção */
 @media (min-width: 300px) and (max-width: 390px) {
   h2.title-section {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
   }
 }
 
