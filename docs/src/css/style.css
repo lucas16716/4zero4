@@ -37,7 +37,7 @@
   --fs-xl: 1.5rem;
   --fs-xxl: 2rem;
   --fs-display-sm: 4rem;
-  --fs-display-md: 5.5rem;
+  --fs-display-md: 5rem;
   --fs-contact: 4.2rem;
 
   /* Espaçamento */
@@ -162,11 +162,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.7rem 3.5rem;
+    padding: 0.9rem 3.2rem;
     transition: all var(--transition-medium);
 
     img {
-      max-width: clamp(110px, 9vw, 150px);
+      max-width: clamp(90px, 8vw, 130px);
       height: auto;
       filter: invert(52%) sepia(27%) saturate(1137%) hue-rotate(285deg)
         brightness(80%) contrast(81%) drop-shadow(2px 2px 2px #00000080);
@@ -182,7 +182,7 @@ header {
     }
 
     .nav-ul {
-      gap: 1.8rem;
+      gap: 1.9rem;
       margin: 0 auto;
       font-size: var(--fs-xxl);
       letter-spacing: 1px;
@@ -204,7 +204,7 @@ header {
     .nav-links a {
       height: 50px;
       padding-top: 17px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: var(--color-primary);
       text-shadow: 1px 1px 3px #000000, 2px 2px 4px #00000080;
     }
@@ -311,12 +311,12 @@ header.scrolled {
   }
 
   .nav-ul a {
-    font-size: 1.9rem;
+    font-size: 1.85rem;
     -webkit-text-stroke: 0;
   }
 
   .nav-links a {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
     color: var(--color-text-white);
   }
 }
@@ -1410,7 +1410,7 @@ footer {
     top: 1.5rem;
     right: 1.8rem;
     z-index: var(--z-toggle-btn);
-    font-size: var(--fs-xxl);
+    font-size: 1.7rem;
     color: var(--color-primary);
     cursor: pointer;
   }
@@ -1424,7 +1424,7 @@ footer {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: var(--fs-xxl);
+    font-size: var(--fs-xl);
     color: var(--color-primary);
   }
 
@@ -1439,14 +1439,14 @@ footer {
     height: 100vh;
     padding: var(--space-sm);
     padding-bottom: 80px;
-    gap: var(--space-sm);
+    gap: var(--space-md);
     background: var(--color-bg);
     transform: translateX(0);
     transition: transform var(--transition-medium);
 
     a {
       padding-bottom: 10px;
-      font-size: 2.4rem;
+      font-size: 2.2rem;
     }
   }
 
@@ -1462,11 +1462,11 @@ footer {
     z-index: var(--z-mobile-menu);
     width: 35vw;
     padding: var(--space-sm);
-    gap: var(--space-sm);
+    gap: var(--space-md);
 
     a {
       margin-bottom: 10px;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 
