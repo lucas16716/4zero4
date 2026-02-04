@@ -1,463 +1,861 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="author" content="Banda 4zero4!">
-  <meta name="description" content="Descubra tudo sobre a banda e curta suas músicas que vão do pop punk ao power pop. Ouça agora o som da nova geração do rock! 🤘🏻">
-  <meta name="keywords" content="Banda 4zero4, novidades musicais, rock brasileiro, música independente, escute 4zero4, rock nacional">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#bf5a83">
-  <meta property="og:title" content="Banda 4zero4! - Nova geração do Rock Nacional">
-  <meta property="og:description" content="Descubra tudo sobre a banda e curta suas músicas incríveis que vão do pop punk ao power pop! 🤘🏻">
-  <meta property="og:image" content="https://raw.githubusercontent.com/lucas16716/4zero4/master/docs/assets/img/galeria/0.jpg">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://4zero4.vercel.app">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Banda 4zero4! - Nova geração do Rock Nacional">
-  <meta name="twitter:description" content="Descubra tudo sobre a banda 404 e curta suas músicas que vão do punk ao power pop! 🤘🏻">
-  <meta name="twitter:image" content="./assets/img/galeria/0.jpg">
-  <link rel="icon" href="./assets/img/logos/logo.svg" type="image/svg">
-  <link rel="apple-touch-icon" href="./assets/img/logos/logo.png">
-  <link rel="icon" href="./assets/img/logos/logo.png" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preload" href="./assets/fonts/Blackiron.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="./assets/videos/bg-video.webm" as="video" type="video/webm">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap">
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "4zero4!",
-    "description": "Banda de pop punk de São Paulo.",
-    "url": "https://4zero4.vercel.app",
-    "image": "https://raw.githubusercontent.com/lucas16716/4zero4/master/docs/assets/img/galeria/0.jpg",
-    "sameAs": [
-      "https://www.instagram.com/4zero4oficial",
-      "https://www.facebook.com/sampapoppunk",
-      "https://www.youtube.com/@4zero4oficial"
-    ],
-    "album": [
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="author" content="Banda 4zero4!" />
+    <meta
+      name="description"
+      content="Descubra tudo sobre a banda e curta suas músicas que vão do pop punk ao power pop. Ouça agora o som da nova geração do rock! 🤘🏻"
+    />
+    <meta
+      name="keywords"
+      content="Banda 4zero4, novidades musicais, rock brasileiro, música independente, escute 4zero4, rock nacional"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#bf5a83" />
+    <meta
+      property="og:title"
+      content="Banda 4zero4! - Nova geração do Rock Nacional"
+    />
+    <meta
+      property="og:description"
+      content="Descubra tudo sobre a banda e curta suas músicas incríveis que vão do pop punk ao power pop! 🤘🏻"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/lucas16716/4zero4/master/docs/assets/img/galeria/0.jpg"
+    />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://4zero4.vercel.app" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Banda 4zero4! - Nova geração do Rock Nacional"
+    />
+    <meta
+      name="twitter:description"
+      content="Descubra tudo sobre a banda 404 e curta suas músicas que vão do punk ao power pop! 🤘🏻"
+    />
+    <meta name="twitter:image" content="./assets/img/galeria/0.jpg" />
+    <link rel="icon" href="./assets/img/logos/logo.svg" type="image/svg" />
+    <link rel="apple-touch-icon" href="./assets/img/logos/logo.png" />
+    <link
+      rel="icon"
+      href="./assets/img/logos/logo.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link
+      rel="preload"
+      href="./assets/fonts/Blackiron.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/videos/bg-video.webm"
+      as="video"
+      type="video/webm"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <script type="application/ld+json">
       {
-        "@type": "MusicAlbum",
-        "name": "Acoustic Sessions",
-        "byArtist": "4zero4!"
-      },
-      {
-        "@type": "MusicAlbum",
-        "name": "Porque eu sou 4zero4!",
-        "byArtist": "4zero4!"
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "4zero4!",
+        "description": "Banda de pop punk de São Paulo.",
+        "url": "https://4zero4.vercel.app",
+        "image": "https://raw.githubusercontent.com/lucas16716/4zero4/master/docs/assets/img/galeria/0.jpg",
+        "sameAs": [
+          "https://www.instagram.com/4zero4oficial",
+          "https://www.facebook.com/sampapoppunk",
+          "https://www.youtube.com/@4zero4oficial"
+        ],
+        "album": [
+          {
+            "@type": "MusicAlbum",
+            "name": "Acoustic Sessions",
+            "byArtist": "4zero4!"
+          },
+          {
+            "@type": "MusicAlbum",
+            "name": "Porque eu sou 4zero4!",
+            "byArtist": "4zero4!"
+          }
+        ]
       }
-    ]
-  }
-  </script>
-  <title>4zero4!</title>
-</head>
+    </script>
+    <title>4zero4!</title>
+  </head>
 
-<body>
-
-  <div class="site-background-video" aria-hidden="true">
-    <video autoplay muted loop playsinline>
-      <source src="./assets/videos/bg-pink.webm" type="video/webm">
-      <source src="./assets/videos/bg-pink.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
-  </div>
-
-  <header id="menu">
-    <nav>
-      <a class="back-to-top" href="#home" aria-label="voltar ao início da página" aria-current="page"><img src="./assets/img/logos/logo.svg"></a>
-
-      <input type="checkbox" id="menu-toggle" hidden>
-      <label for="menu-toggle" class="menu-toggle-btn">
-        <i class="fi fi-sr-menu-burger"></i>
-      </label>
-
-      <ul class="nav-ul">
-        <li class="nav-item-dropdown">
-          <a aria-label="Sobre a banda, escolha sua opção" href="#sobre">sobre<i class="fi fi-sr-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="#banda">banda</a></li>
-            <li><a href="#integrantes">integrantes</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-item" href="#discografia">discografia</a></li>
-        <li><a class="nav-item" href="#galeria">galeria</a></li>
-        <li><a class="nav-item" href="#shows">shows</a></li>
-        <li><a class="nav-item" href="#contato">contato</a></li>
-      </ul>
-      <ul class="nav-links">
-        <li><a href="https://www.instagram.com/4zero4oficial" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram"><i class="fi fi-brands-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/sampapoppunk" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook"><i class="fi fi-brands-facebook"></i></a></li>
-        <li><a href="https://www.youtube.com/@4zero4oficial" target="_blank" rel="noopener noreferrer" aria-label="Abrir YouTube"><i class="fi fi-brands-youtube"></i></a></li>
-        <li><a href="https://open.spotify.com/intl-pt/artist/1pDsoJcZYrpLG73qm5ZuId" rel="noopener noreferrer" target="_blank" aria-label="Abrir Spotify"><i class="fi fi-brands-spotify"></i></a></li>
-        <li><a href=" https://deezer.page.link/8NH46yztFd6fRKi87" target="_blank" rel="noopener noreferrer" aria-label="Abrir Deezer"><i class="fi fi-brands-deezer"></i></a></li>
-        <li><a href="https://music.apple.com/br/artist/4zero4/1750011489" target="_blank" rel="noopener noreferrer" aria-label="Abrir Apple Music"><i class="fi fi-brands-apple"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-      <video autoplay muted loop playsinline id="video-background" class="background-video" aria-label="Fundo com o videoclipe mutado da música '404'">
-        <source src="./assets/videos/bg-video.webm" type="video/webm">
-        <source src="./assets/videos/bg-video.mp4" type="video/mp4">
+  <body>
+    <div class="site-background-video" aria-hidden="true">
+      <video autoplay muted loop playsinline>
+        <source src="./assets/videos/bg-pink.webm" type="video/webm" />
+        <source src="./assets/videos/bg-pink.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo.
       </video>
-      <div class="call-to-action">
-        <h1 id="cta-heading">O punk não está morto!</h1>
-        <h2 id="cta-subheading">Confira o clipe oficial do single “404”</h2>
-        <a href="https://youtu.be/tPtk7I0uktA?si=IFEm1uc62tmEvUF1" target="_blank" rel="noopener noreferrer" aria-label="Assista o videoclipe de '404', primeiro single da banda, no YouTube">PLAY</a>
-      </div>
-    </section>
+    </div>
 
-    <section id="banda">
-      <h2 class="title-section">Banda</h2>
-      <div class="p-banda js-reveal-from-bottom">
-        <p>
-          <strong>4zero4!</strong> nasceu em 2019, na cidade de <strong>São Paulo</strong>, sendo uma banda que mistura vertentes do <strong>pop punk</strong>, <strong>rapcore</strong> e <strong>power pop</strong> em uma combinação única de autenticidade e energia. Formada originalmente por <strong>Thom</strong>, <strong>Tavinho</strong>, <strong>Jandros</strong> e <strong>Patrô</strong>, o grupo encontrou ainda mais força e identidade com a chegada de <strong>Mar Mantovani</strong>.
-        </p>
-        <p>
-          Em 2024, lançaram seu aguardado primeiro EP -<strong>"PORQUE EU SOU 404!"</strong>, uma obra que explora diferentes facetas musicais, trazendo letras emocionantes e sonoridades vibrantes. Com influências marcantes e uma pegada que conecta o clássico ao contemporâneo, a banda está pronta para conquistar novos públicos e deixar sua marca no cenário musical.
-        </p>
-      </div>
-    </section>
-    <section id="integrantes">
-      <h2 class="title-section">Integrantes</h2>
-      <div class="cards js-reveal-from-bottom">
-        <figure class="card">
-          <img src="./assets/img/integrantes/thom.webp" loading="lazy" alt="Vocalista Thomas Lira risonho e cheio de estilo!" class="card_image" aria-labelledby="thomas-title thomas-subtitle" />
-          <figcaption class="card_body">
-            <ul class="card_social">
-              <li>
-                <a href="https://www.instagram.com/othomaslira/" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Instagram de Thomas Lira">
-                  <i class="fi fi-brands-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/othomaslira" target="_blank" rel="noopener noreferrer" aria-label="Abrir o X/Twitter de Thomas Lira">
-                  <i class="fi fi-brands-twitter-alt"></i>
-                </a>
-              </li>
-            </ul>
-            <h2 class="card_title" id="thomas-title">Thomas Lira</h2>
-            <h3 class="card_subtitle" id="thomas-subtitle">Vocal</h3>
-          </figcaption>
-        </figure>
-        <figure class="card">
-          <img src="./assets/img/integrantes/tavinho.webp" loading="lazy" alt="Guitarrista Tavinho no melhor estilo 'Exterminador do Futuro'" class="card_image" aria-labelledby="tavinho-title tavinho-subtitle" />
-          <figcaption class="card_body">
-            <ul class="card_social">
-              <li>
-                <a href="https://www.instagram.com/tavinho.404/" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Instagram de Tavinho">
-                  <i class="fi fi-brands-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <h2 class="card_title" id="tavinho-title">Tavinho</h2>
-            <h3 class="card_subtitle" id="tavinho-subtitle">Guitarra</h3>
-          </figcaption>
-        </figure>
-        <figure class="card">
-          <img src="./assets/img/integrantes/jandros.webp" loading="lazy" alt="Jandros, o baixista, tocando com muito estilo e cabelos ao vento!" class="card_image" aria-labelledby="jandros-title jandros-subtitle" />
-          <figcaption class="card_body">
-            <ul class="card_social">
-              <li>
-                <a href="https://www.instagram.com/jandros_a/" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Instagram de Jandros">
-                  <i class="fi fi-brands-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <h2 class="card_title" id="jandros-title">Jandros</h2>
-            <h3 class="card_subtitle" id="jandros-subtitle">Baixo</h3>
-          </figcaption>
-        </figure>
-        <figure class="card">
-          <img src="./assets/img/integrantes/patro.webp" loading="lazy" alt="Patrô, o baterista, posando com suas baquetas" class="card_image" aria-labelledby="patro-title patro-subtitle" />
-          <figcaption class="card_body">
-            <ul class="card_social">
-              <li>
-                <a href="https://www.instagram.com/gu.patrocinio/" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Instagram de Patrô">
-                  <i class="fi fi-brands-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <h2 class="card_title" id="patro-title">Patrô</h2>
-            <h3 class="card_subtitle" id="patro-subtitle">Bateria</h3>
-          </figcaption>
-        </figure>
-        <figure class="card">
-          <img src="./assets/img/integrantes/mantovani.webp" loading="lazy" alt="O novo integrante Mantovani posando com sua guitarra" class="card_image" aria-labelledby="mantovani-title mantovani-subtitle" />
-          <figcaption class="card_body">
-            <ul class="card_social">
-              <li>
-                <a href="https://www.instagram.com/mar_mantovani/" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Instagram de Mantovani">
-                  <i class="fi fi-brands-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <h2 class="card_title" id="mantovani-title">Mantovani</h2>
-            <h3 class="card_subtitle" id="mantovani-subtitle">Guitarra / Vocal</h3>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-    <section id="discografia">
-      <h2 class="title-section">Discografia</h2>
-      <p class="p-disco">Selecione um álbum e ouça na sua plataforma de música favorita!</p>
-      <div class="wrapper js-reveal-from-bottom">
-        <figure class="card_disco">
-          <img src="./assets/img/discografia/ep-acoustic.webp" loading="lazy" alt="Capa do EP 'Acoustic Sessions' com o logo da banda e nome do albúm estilizado em grafite numa parede de tijolos rosas">
-          <figcaption class="info">
-            <h2>Acoustic Sessions</h2>
-            <p>2024 • EP especial de Natal</p>
-            <a href="https://open.spotify.com/intl-pt/album/4rZRZkeDRFKq4cLbSWozM8" target="_blank" rel="noopener noreferrer">
-              <button>Play</button>
-            </a>
-          </figcaption>
-        </figure>
-        <figure class="card_disco">
-          <img src="./assets/img/discografia/ep-pqes404.webp" loading="lazy" alt="Capa do EP 'Porque eu sou 4zero4!' com o logo e foto da banda estilizado em grafite numa parede de tijolos">
-          <figcaption class="info">
-            <h2>Porque eu sou 4zero4!</h2>
-            <p>2024 • EP</p>
-            <a href="https://onerpm.link/745756165142" target="_blank" rel="noopener noreferrer">
-              <button>Play</button>
-            </a>
-          </figcaption>
-        </figure>
-        <figure class="card_disco">
-          <img src="./assets/img/discografia/bloco-de-notas.webp" loading="lazy" alt="Capa do Single 'Bloco de Notas' com uma bateria escrita o nome da banda e do single nela, com pétalas de rosa por cima">
-          <figcaption class="info">
-            <h2>Bloco de Notas</h2>
-            <p>2023 • Single</p>
-            <a href="https://youtu.be/mZQYgSFtVp8?si=4mRCpR85V53ek8ik" target="_blank" rel="noopener noreferrer">
-              <button>Play</button>
-            </a>
-          </figcaption>
-        </figure>
-        <figure class="card_disco">
-          <img src="./assets/img/discografia/na-sua-porta.webp" loading="lazy" alt="Capa do Single 'Na Sua Porta' com uma fotografia de uma porta rosa deixada na areia de uma praia">
-          <figcaption class="info">
-            <h2>Na Sua Porta</h2>
-            <p>2023 • Single</p>
-            <a href="https://youtu.be/ENvfRMiUH0o?si=0Q51ta_Roy8R4Eu3" target="_blank" rel="noopener noreferrer">
-              <button>Play</button>
-            </a>
-          </figcaption>
-        </figure>
-        <figure class="card_disco">
-          <img src="./assets/img/discografia/404.webp" loading="lazy" alt="Capa do Single '404', que remete ao punk com uma pizza centralizada e outras figurinhas coladas na capa">
-          <figcaption class="info">
-            <h2>404</h2>
-            <p>2023 • Primeiro Single Oficial</p>
-            <a href="https://youtu.be/tPtk7I0uktA?si=roIA84LgdHCIAve3" target="_blank" rel="noopener noreferrer">
-              <button>Play</button>
-            </a>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-    <section id="galeria">
-      <h2 class="title-section">Galeria</h2>
-      <figure class="image js-reveal-from-bottom" role="region" aria-label="Galeria de Fotos" tabindex="0">
-        <img class="active" src="./assets/img/galeria/1.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com os integrantes a posar num estúdio">
-        <img src="./assets/img/galeria/2.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com os integrantes sorridentes, exceto o Tavinho que está sério com óculos escuros de cor rosa">
-        <img src="./assets/img/galeria/3.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com os integrantes fazendo poses engraçadas com seus instrumentos">
-        <img src="./assets/img/galeria/4.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com os integrantes sérios, exceto o Tavinho que está fazendo careta. Está foto é a foto oficial da capa do EP 'Porque eu sou 4zero4!'">
-        <img src="./assets/img/galeria/5.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com Jandros, Tavinho e Thomas posando juntos">
-        <img src="./assets/img/galeria/6.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com Jandros, Tavinho e Thomas posando juntos deitados no chão com suas cabeças próximas">
-        <img src="./assets/img/galeria/7.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com o Jandros olhando para câmera, Tavinho e Patrô virados um para o outro e Thomas olhando para Tavinho e Patrô">
-        <img src="./assets/img/galeria/8.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com os integrantes posando sérios com seus instrumentos, exceto o Tavinho que está fazendo careta">
-        <img src="./assets/img/galeria/9.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com os integrantes posando sérios">
-        <img src="./assets/img/galeria/10.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com o Jandros em destaque se divertindo com seu baixo">
-        <img src="./assets/img/galeria/11.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com o Thomas em destaque posando com estilo">
-        <img src="./assets/img/galeria/12.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com o PatrÔ em destaque posando seriamente com suas baquetas">
-        <img src="./assets/img/galeria/13.webp" loading="lazy" alt="Ensaio fotográfico da banda 4zero4! com o Tavinho em destaque e mostrando o dedo médio para a câmera">
-        <img src="./assets/img/galeria/14.webp" loading="lazy" alt="Banda 4zero4! posando dentro de um estúdio de gravação e segurando uma bandeira rosa com o logo da banda">
-        <img src="./assets/img/galeria/15.webp" loading="lazy" alt="Banda 4zero4! posando dentro de um estúdio de gravação, estão sentados em um sofá o Jandros e o Tavinho, e a frente no chão estão o Thomas e o Patrô">
-        <img src="./assets/img/galeria/16.webp" loading="lazy" alt="Banda 4zero4! posando dentro de um estúdio de gravação, estão sentados em um sofá o Jandros e o Tavinho, e a frente no chão estão o Thomas e o Patrô. Suas poses são diferentes da foto anterior">
-        <img src="./assets/img/galeria/17.webp" loading="lazy" alt="Banda 4zero4! posando dentro de um estúdio de gravação com seus instrumentos e prontos para tocar">
-        <img src="./assets/img/galeria/18.webp" loading="lazy" alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação">
-        <img src="./assets/img/galeria/19.webp" loading="lazy" alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Thomas e Tavinho">
-        <img src="./assets/img/galeria/20.webp" loading="lazy" alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Thomas e Tavinho cantando juntos">
-        <img src="./assets/img/galeria/21.webp" loading="lazy" alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Tavinho arrasando na guitarra">
-        <img src="./assets/img/galeria/22.webp" loading="lazy" alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Jandros arrasando no baixo">
-        <img src="./assets/img/galeria/23.webp" loading="lazy" alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Patrô arrasando na bateria">
-        <img src="./assets/img/galeria/24.webp" loading="lazy" alt="Arte da bandeira rosa com o logo da banda que estavam segurando na imagem 14">
-      </figure>
-      <div class="controls js-reveal-from-bottom">
-        <button id="prev" class="prev" aria-label="Imagem anterior"><i class="fi fi-sr-angle-small-left"></i></button>
-        <button id="next" class="next" aria-label="Próxima imagem"><i class="fi fi-sr-angle-small-right"></i></button>
-      </div>
-    </section>
-    <section id="shows">
-      <h2 class="title-section">Shows</h2>
-      <div class="card-shows-wrapper js-reveal-from-bottom">
-        <!-- <div class="card-shows">
-          <img class="shows-thom-img" src="./assets/img/shows/tour-404.webp" alt="Flyer promocional da banda 4zero4 anunciando 'Em Breve Nova Tour 2026!'. Os integrantes posam juntos com atitude e, no topo da imagem, paira um misterioso limão rosa flutuante">
-        </div> -->
-        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DTRPY5GD1UX/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-          <div style="padding:16px;"> <a href="https://www.instagram.com/reel/DTRPY5GD1UX/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-              <div style=" display: flex; flex-direction: row; align-items: center;">
-                <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                  <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                  <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                </div>
-              </div>
-              <div style="padding: 19% 0;"></div>
-              <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                      <g>
-                        <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
-                      </g>
-                    </g>
-                  </g>
-                </svg></div>
-              <div style="padding-top: 8px;">
-                <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div>
-              </div>
-              <div style="padding: 12.5% 0;"></div>
-              <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                <div>
-                  <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
-                  <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
-                  <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                </div>
-                <div style="margin-left: 8px;">
-                  <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
-                  <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
-                </div>
-                <div style="margin-left: auto;">
-                  <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
-                  <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
-                  <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
-                </div>
-              </div>
-              <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
-                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
-              </div>
-            </a>
-            <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DTRPY5GD1UX/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Um post compartilhado por Dkukas (@dkukas)</a></p>
-          </div>
-        </blockquote>
-        <script async src="//www.instagram.com/embed.js"></script>
-      </div>
+    <header id="menu">
+      <nav>
+        <a
+          class="back-to-top"
+          href="#home"
+          aria-label="voltar ao início da página"
+          aria-current="page"
+          ><img src="./assets/img/logos/logo.svg"
+        /></a>
 
-    </section>
-    <section id="contato">
-      <div class="container js-reveal-from-bottom">
-        <h2 class="h2-contato">Fale conosco!</h2>
-        <div class="flex-container-row">
-          <div class="flex-form">
-            <form class="form-wrapper" action="https://formspree.io/f/mldgzknv" method="POST">
-              <div class="form-card">
-                <input class="form-input" id="name" type="text" name="name" required="required" placeholder=" " />
-                <label class="form-label" for="name">Nome</label>
-              </div>
-              <div class="form-card">
-                <input class="form-input" id="email" type="email" name="email" required="required" placeholder=" " />
-                <label class="form-label" for="email">E-mail</label>
-              </div>
-              <div class="form-card">
-                <select class="form-input" name="assunto" id="assunto" required="required">
-                  <option value="" disabled selected></option>
-                  <option value="shows-eventos">Shows/Eventos</option>
-                  <option value="parcerias-colaboracoes">Parcerias/Colaborações</option>
-                  <option value="divulgacao-midia">Divulgação/Mídia</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="pedido-musicas">Pedido de Músicas nos Shows</option>
-                  <option value="problemas-site">Problemas Técnicos no Site</option>
-                  <option value="outros">Outros</option>
-                </select>
-                <label class="form-label" for="assunto">Assunto</label>
-              </div>
-              <div class="form-card">
-                <textarea class="form-textarea" id="mensagem" maxlength="420" rows="3" name="mensagem" required="required" placeholder=" "></textarea>
-                <label class="form-textarea-label" for="mensagem">Mensagem</label>
-              </div>
-              <button class="mail-btn" type="submit">Enviar</button>
-            </form>
+        <input type="checkbox" id="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-toggle-btn">
+          <i class="fi fi-sr-menu-burger"></i>
+        </label>
+
+        <ul class="nav-ul">
+          <li class="nav-item-dropdown">
+            <a aria-label="Sobre a banda, escolha sua opção" href="#sobre"
+              >sobre<i class="fi fi-sr-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#banda">banda</a></li>
+              <li><a href="#integrantes">integrantes</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-item" href="#discografia">discografia</a></li>
+          <li><a class="nav-item" href="#galeria">galeria</a></li>
+          <li><a class="nav-item" href="#shows">shows</a></li>
+          <li><a class="nav-item" href="#contato">contato</a></li>
+        </ul>
+        <ul class="nav-links">
+          <li>
+            <a
+              href="https://www.instagram.com/4zero4oficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Instagram"
+              ><i class="fi fi-brands-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sampapoppunk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Facebook"
+              ><i class="fi fi-brands-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@4zero4oficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir YouTube"
+              ><i class="fi fi-brands-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/intl-pt/artist/1pDsoJcZYrpLG73qm5ZuId"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label="Abrir Spotify"
+              ><i class="fi fi-brands-spotify"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href=" https://deezer.page.link/8NH46yztFd6fRKi87"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Deezer"
+              ><i class="fi fi-brands-deezer"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://music.apple.com/br/artist/4zero4/1750011489"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Apple Music"
+              ><i class="fi fi-brands-apple"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          id="video-background"
+          class="background-video"
+          aria-label="Fundo com o videoclipe mutado da música '404'"
+        >
+          <source src="./assets/videos/bg-video.webm" type="video/webm" />
+          <source src="./assets/videos/bg-video.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
+        <div class="call-to-action">
+          <h1 id="cta-heading">O punk não está morto!</h1>
+          <h2 id="cta-subheading">Confira o clipe oficial do single “404”</h2>
+          <a
+            href="https://youtu.be/tPtk7I0uktA?si=IFEm1uc62tmEvUF1"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Assista o videoclipe de '404', primeiro single da banda, no YouTube"
+            >PLAY</a
+          >
+        </div>
+      </section>
+
+      <section id="banda">
+        <h2 class="title-section">Banda</h2>
+        <div class="p-banda js-reveal-from-bottom">
+          <p>
+            <strong>4zero4!</strong> nasceu em 2019, na cidade de
+            <strong>São Paulo</strong>, sendo uma banda que mistura vertentes do
+            <strong>pop punk</strong>, <strong>rapcore</strong> e
+            <strong>power pop</strong> em uma combinação única de autenticidade
+            e energia. Formada originalmente por <strong>Thom</strong>,
+            <strong>Tavinho</strong>, <strong>Jandros</strong> e
+            <strong>Patrô</strong>, o grupo encontrou ainda mais força e
+            identidade com a chegada de <strong>Mar Mantovani</strong>.
+          </p>
+          <p>
+            Em 2024, lançaram seu aguardado primeiro EP -<strong
+              >"PORQUE EU SOU 404!"</strong
+            >, uma obra que explora diferentes facetas musicais, trazendo letras
+            emocionantes e sonoridades vibrantes. Com influências marcantes e
+            uma pegada que conecta o clássico ao contemporâneo, a banda está
+            pronta para conquistar novos públicos e deixar sua marca no cenário
+            musical.
+          </p>
+        </div>
+      </section>
+      <section id="integrantes">
+        <h2 class="title-section">Integrantes</h2>
+        <div class="cards js-reveal-from-bottom">
+          <figure class="card">
+            <img
+              src="./thom.jpg"
+              loading="lazy"
+              alt="Vocalista Thomas está com boné rosa e camiseta preta fazendo um gesto de 'garra' em direção à câmera. A lente olho de peixe distorce as mãos, criando profundidade."
+              class="card_image"
+              aria-labelledby="thomas-title thomas-subtitle"
+            />
+            <figcaption class="card_body">
+              <ul class="card_social">
+                <li>
+                  <a
+                    href="https://www.instagram.com/othomaslira/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Instagram de Thomas Lira"
+                  >
+                    <i class="fi fi-brands-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/othomaslira"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o X/Twitter de Thomas Lira"
+                  >
+                    <i class="fi fi-brands-twitter-alt"></i>
+                  </a>
+                </li>
+              </ul>
+              <h2 class="card_title" id="thomas-title">Thomas Lira</h2>
+              <h3 class="card_subtitle" id="thomas-subtitle">Vocal</h3>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="./tavin.jpg"
+              loading="lazy"
+              alt="Guitarrista Tavinho está sorridente com óculos escuros e camiseta preta do Green Day. Ele está com os braços abertos em frente ao muro de grafite."
+              class="card_image"
+              aria-labelledby="tavinho-title tavinho-subtitle"
+            />
+            <figcaption class="card_body">
+              <ul class="card_social">
+                <li>
+                  <a
+                    href="https://www.instagram.com/tavinho.404/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Instagram de Tavinho"
+                  >
+                    <i class="fi fi-brands-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+              <h2 class="card_title" id="tavinho-title">Tavinho</h2>
+              <h3 class="card_subtitle" id="tavinho-subtitle">Guitarra</h3>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="./jandros.jpg"
+              loading="lazy"
+              alt="Jandros, o baixista, está de óculos escuros, camiseta e bermuda pretas, encostado no muro grafitado. Ele olha para o lado oposto à câmera com uma expressão serena."
+              class="card_image"
+              aria-labelledby="jandros-title jandros-subtitle"
+            />
+            <figcaption class="card_body">
+              <ul class="card_social">
+                <li>
+                  <a
+                    href="https://www.instagram.com/jandros_a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Instagram de Jandros"
+                  >
+                    <i class="fi fi-brands-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+              <h2 class="card_title" id="jandros-title">Jandros</h2>
+              <h3 class="card_subtitle" id="jandros-subtitle">Baixo</h3>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="./patro.jpg"
+              loading="lazy"
+              alt="Close-up em Patrô, o baterista, que está de óculos escuros e camisa clara, fazendo o sinal de 'rock n' roll' com as duas mãos bem próximas à lente olho de peixe."
+              class="card_image"
+              aria-labelledby="patro-title patro-subtitle"
+            />
+            <figcaption class="card_body">
+              <ul class="card_social">
+                <li>
+                  <a
+                    href="https://www.instagram.com/gu.patrocinio/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Instagram de Patrô"
+                  >
+                    <i class="fi fi-brands-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+              <h2 class="card_title" id="patro-title">Patrô</h2>
+              <h3 class="card_subtitle" id="patro-subtitle">Bateria</h3>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="./mantovani.jpg"
+              loading="lazy"
+              alt="O novo integrante Mantovani está sorridente vestindo uma camiseta esportiva rosa e preta. Ele está posicionado no canto direito, com parte do muro de grafite e a calçada ao fundo."
+              class="card_image"
+              aria-labelledby="mantovani-title mantovani-subtitle"
+            />
+            <figcaption class="card_body">
+              <ul class="card_social">
+                <li>
+                  <a
+                    href="https://www.instagram.com/mar_mantovani/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Instagram de Mantovani"
+                  >
+                    <i class="fi fi-brands-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+              <h2 class="card_title" id="mantovani-title">Mantovani</h2>
+              <h3 class="card_subtitle" id="mantovani-subtitle">
+                Guitarra / Vocal
+              </h3>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="discografia">
+        <h2 class="title-section">Discografia</h2>
+        <p class="p-disco">
+          Selecione um álbum e ouça na sua plataforma de música favorita!
+        </p>
+        <div class="wrapper js-reveal-from-bottom">
+          <figure class="card_disco">
+            <img
+              src="./assets/img/discografia/ep-acoustic.webp"
+              loading="lazy"
+              alt="Capa do EP 'Acoustic Sessions' com o logo da banda e nome do albúm estilizado em grafite numa parede de tijolos rosas"
+            />
+            <figcaption class="info">
+              <h2>Acoustic Sessions</h2>
+              <p>2024 • EP especial de Natal</p>
+              <a
+                href="https://open.spotify.com/intl-pt/album/4rZRZkeDRFKq4cLbSWozM8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Play</button>
+              </a>
+            </figcaption>
+          </figure>
+          <figure class="card_disco">
+            <img
+              src="./assets/img/discografia/ep-pqes404.webp"
+              loading="lazy"
+              alt="Capa do EP 'Porque eu sou 4zero4!' com o logo e foto da banda estilizado em grafite numa parede de tijolos"
+            />
+            <figcaption class="info">
+              <h2>Porque eu sou 4zero4!</h2>
+              <p>2024 • EP</p>
+              <a
+                href="https://onerpm.link/745756165142"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Play</button>
+              </a>
+            </figcaption>
+          </figure>
+          <figure class="card_disco">
+            <img
+              src="./assets/img/discografia/bloco-de-notas.webp"
+              loading="lazy"
+              alt="Capa do Single 'Bloco de Notas' com uma bateria escrita o nome da banda e do single nela, com pétalas de rosa por cima"
+            />
+            <figcaption class="info">
+              <h2>Bloco de Notas</h2>
+              <p>2023 • Single</p>
+              <a
+                href="https://youtu.be/mZQYgSFtVp8?si=4mRCpR85V53ek8ik"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Play</button>
+              </a>
+            </figcaption>
+          </figure>
+          <figure class="card_disco">
+            <img
+              src="./assets/img/discografia/na-sua-porta.webp"
+              loading="lazy"
+              alt="Capa do Single 'Na Sua Porta' com uma fotografia de uma porta rosa deixada na areia de uma praia"
+            />
+            <figcaption class="info">
+              <h2>Na Sua Porta</h2>
+              <p>2023 • Single</p>
+              <a
+                href="https://youtu.be/ENvfRMiUH0o?si=0Q51ta_Roy8R4Eu3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Play</button>
+              </a>
+            </figcaption>
+          </figure>
+          <figure class="card_disco">
+            <img
+              src="./assets/img/discografia/404.webp"
+              loading="lazy"
+              alt="Capa do Single '404', que remete ao punk com uma pizza centralizada e outras figurinhas coladas na capa"
+            />
+            <figcaption class="info">
+              <h2>404</h2>
+              <p>2023 • Primeiro Single Oficial</p>
+              <a
+                href="https://youtu.be/tPtk7I0uktA?si=roIA84LgdHCIAve3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Play</button>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="galeria">
+        <h2 class="title-section">Galeria</h2>
+        <figure
+          class="image js-reveal-from-bottom"
+          role="region"
+          aria-label="Galeria de Fotos"
+          tabindex="0"
+        >
+          <img
+            class="active"
+            src="./assets/img/galeria/1.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com os integrantes a posar num estúdio"
+          />
+          <img
+            src="./assets/img/galeria/2.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com os integrantes sorridentes, exceto o Tavinho que está sério com óculos escuros de cor rosa"
+          />
+          <img
+            src="./assets/img/galeria/3.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com os integrantes fazendo poses engraçadas com seus instrumentos"
+          />
+          <img
+            src="./assets/img/galeria/4.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com os integrantes sérios, exceto o Tavinho que está fazendo careta. Está foto é a foto oficial da capa do EP 'Porque eu sou 4zero4!'"
+          />
+          <img
+            src="./assets/img/galeria/5.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com Jandros, Tavinho e Thomas posando juntos"
+          />
+          <img
+            src="./assets/img/galeria/6.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com Jandros, Tavinho e Thomas posando juntos deitados no chão com suas cabeças próximas"
+          />
+          <img
+            src="./assets/img/galeria/7.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com o Jandros olhando para câmera, Tavinho e Patrô virados um para o outro e Thomas olhando para Tavinho e Patrô"
+          />
+          <img
+            src="./assets/img/galeria/8.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com os integrantes posando sérios com seus instrumentos, exceto o Tavinho que está fazendo careta"
+          />
+          <img
+            src="./assets/img/galeria/9.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com os integrantes posando sérios"
+          />
+          <img
+            src="./assets/img/galeria/10.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com o Jandros em destaque se divertindo com seu baixo"
+          />
+          <img
+            src="./assets/img/galeria/11.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com o Thomas em destaque posando com estilo"
+          />
+          <img
+            src="./assets/img/galeria/12.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com o PatrÔ em destaque posando seriamente com suas baquetas"
+          />
+          <img
+            src="./assets/img/galeria/13.webp"
+            loading="lazy"
+            alt="Ensaio fotográfico da banda 4zero4! com o Tavinho em destaque e mostrando o dedo médio para a câmera"
+          />
+          <img
+            src="./assets/img/galeria/14.webp"
+            loading="lazy"
+            alt="Banda 4zero4! posando dentro de um estúdio de gravação e segurando uma bandeira rosa com o logo da banda"
+          />
+          <img
+            src="./assets/img/galeria/15.webp"
+            loading="lazy"
+            alt="Banda 4zero4! posando dentro de um estúdio de gravação, estão sentados em um sofá o Jandros e o Tavinho, e a frente no chão estão o Thomas e o Patrô"
+          />
+          <img
+            src="./assets/img/galeria/16.webp"
+            loading="lazy"
+            alt="Banda 4zero4! posando dentro de um estúdio de gravação, estão sentados em um sofá o Jandros e o Tavinho, e a frente no chão estão o Thomas e o Patrô. Suas poses são diferentes da foto anterior"
+          />
+          <img
+            src="./assets/img/galeria/17.webp"
+            loading="lazy"
+            alt="Banda 4zero4! posando dentro de um estúdio de gravação com seus instrumentos e prontos para tocar"
+          />
+          <img
+            src="./assets/img/galeria/18.webp"
+            loading="lazy"
+            alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação"
+          />
+          <img
+            src="./assets/img/galeria/19.webp"
+            loading="lazy"
+            alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Thomas e Tavinho"
+          />
+          <img
+            src="./assets/img/galeria/20.webp"
+            loading="lazy"
+            alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Thomas e Tavinho cantando juntos"
+          />
+          <img
+            src="./assets/img/galeria/21.webp"
+            loading="lazy"
+            alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Tavinho arrasando na guitarra"
+          />
+          <img
+            src="./assets/img/galeria/22.webp"
+            loading="lazy"
+            alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Jandros arrasando no baixo"
+          />
+          <img
+            src="./assets/img/galeria/23.webp"
+            loading="lazy"
+            alt="Banda 4zero4! tocando um punk rock intenso dentro de um estúdio de gravação, mas com close no Patrô arrasando na bateria"
+          />
+          <img
+            src="./assets/img/galeria/24.webp"
+            loading="lazy"
+            alt="Arte da bandeira rosa com o logo da banda que estavam segurando na imagem 14"
+          />
+        </figure>
+        <div class="controls js-reveal-from-bottom">
+          <button id="prev" class="prev" aria-label="Imagem anterior">
+            <i class="fi fi-sr-angle-small-left"></i>
+          </button>
+          <button id="next" class="next" aria-label="Próxima imagem">
+            <i class="fi fi-sr-angle-small-right"></i>
+          </button>
+        </div>
+      </section>
+      <section id="shows">
+        <h2 class="title-section">Shows</h2>
+        <div class="card-shows-wrapper js-reveal-from-bottom">
+          <div class="card-shows">
+            <img
+              class="shows-thom-img"
+              src="./assets/img/shows/tour-404.webp"
+              alt="Flyer promocional da banda 4zero4 anunciando 'Em Breve Nova Tour 2026!'. Os integrantes posam juntos com atitude e, no topo da imagem, paira um misterioso limão rosa flutuante"
+            />
           </div>
-          <div class="flex-contato">
-            <div class="cards-contato">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="front"><i class="fi fi-sr-chat-bubble-call"></i></div>
-                  <div class="back">THOMAS LIRA<div><a href="https://wa.link/udn6jd" target="_blank"><img width="30" height="30" src="https://img.icons8.com/bf5a83/ios-filled/50/whatsapp--v3.png" alt="whatsapp--v3" /></a></div>
+        </div>
+      </section>
+      <section id="contato">
+        <div class="container js-reveal-from-bottom">
+          <h2 class="h2-contato">Fale conosco!</h2>
+          <div class="flex-container-row">
+            <div class="flex-form">
+              <form
+                class="form-wrapper"
+                action="https://formspree.io/f/mldgzknv"
+                method="POST"
+              >
+                <div class="form-card">
+                  <input
+                    class="form-input"
+                    id="name"
+                    type="text"
+                    name="name"
+                    required="required"
+                    placeholder=" "
+                  />
+                  <label class="form-label" for="name">Nome</label>
+                </div>
+                <div class="form-card">
+                  <input
+                    class="form-input"
+                    id="email"
+                    type="email"
+                    name="email"
+                    required="required"
+                    placeholder=" "
+                  />
+                  <label class="form-label" for="email">E-mail</label>
+                </div>
+                <div class="form-card">
+                  <select
+                    class="form-input"
+                    name="assunto"
+                    id="assunto"
+                    required="required"
+                  >
+                    <option value="" disabled selected></option>
+                    <option value="shows-eventos">Shows/Eventos</option>
+                    <option value="parcerias-colaboracoes">
+                      Parcerias/Colaborações
+                    </option>
+                    <option value="divulgacao-midia">Divulgação/Mídia</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="pedido-musicas">
+                      Pedido de Músicas nos Shows
+                    </option>
+                    <option value="problemas-site">
+                      Problemas Técnicos no Site
+                    </option>
+                    <option value="outros">Outros</option>
+                  </select>
+                  <label class="form-label" for="assunto">Assunto</label>
+                </div>
+                <div class="form-card">
+                  <textarea
+                    class="form-textarea"
+                    id="mensagem"
+                    maxlength="420"
+                    rows="3"
+                    name="mensagem"
+                    required="required"
+                    placeholder=" "
+                  ></textarea>
+                  <label class="form-textarea-label" for="mensagem"
+                    >Mensagem</label
+                  >
+                </div>
+                <button class="mail-btn" type="submit">Enviar</button>
+              </form>
+            </div>
+            <div class="flex-contato">
+              <div class="cards-contato">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="front">
+                      <i class="fi fi-sr-chat-bubble-call"></i>
+                    </div>
+                    <div class="back">
+                      THOMAS LIRA
+                      <div>
+                        <a href="https://wa.link/udn6jd" target="_blank"
+                          ><img
+                            width="30"
+                            height="30"
+                            src="https://img.icons8.com/bf5a83/ios-filled/50/whatsapp--v3.png"
+                            alt="whatsapp--v3"
+                        /></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="front"><i class="fi fi-sr-envelope"></i></div>
-                  <div id="back-email" class="back">OTHOMAS<br>LIRASOARES<br>@GMAIL.COM</div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="front"><i class="fi fi-sr-envelope"></i></div>
+                    <div id="back-email" class="back">
+                      OTHOMAS<br />LIRASOARES<br />@GMAIL.COM
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="front"><i class="fi fi-sr-land-layer-location"></i></div>
-                  <div class="back">SÃO PAULO<br>SP / ZO</div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="front">
+                      <i class="fi fi-sr-land-layer-location"></i>
+                    </div>
+                    <div class="back">SÃO PAULO<br />SP / ZO</div>
+                  </div>
                 </div>
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="front"><i class="fi fi-sr-box-open"></i></div>
-                  <div class="back">BAIXE O PRESS KIT
-                    <div><a href="./assets/docs/Press Kit 4zero4.pdf" download><i id="kit" class="fi fi-sr-file-download"></i></a>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="front"><i class="fi fi-sr-box-open"></i></div>
+                    <div class="back">
+                      BAIXE O PRESS KIT
+                      <div>
+                        <a href="./assets/docs/Press Kit 4zero4.pdf" download
+                          ><i id="kit" class="fi fi-sr-file-download"></i
+                        ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <br />
+              <hr />
+              <br />
+              <p class="p-social">Redes Sociais</p>
+              <br />
+              <ul class="icons">
+                <li>
+                  <a
+                    href="https://www.instagram.com/4zero4oficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Instagram da Banda 4zero4!"
+                  >
+                    <i class="fi fi-brands-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/sampapoppunk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Facebook da Banda 4zero4!"
+                  >
+                    <i class="fi fi-brands-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@4zero4oficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o YouTube da Banda 4zero4!"
+                  >
+                    <i class="fi fi-brands-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://open.spotify.com/intl-pt/artist/1pDsoJcZYrpLG73qm5ZuId"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Spotify da Banda 4zero4!"
+                  >
+                    <i class="fi fi-brands-spotify"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://deezer.page.link/8NH46yztFd6fRKi87"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Deezer da Banda 4zero4!"
+                  >
+                    <i class="fi fi-brands-deezer"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://music.apple.com/br/artist/4zero4/1750011489"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir o Apple Music da Banda 4zero4!"
+                  >
+                    <i class="fi fi-brands-apple"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <br>
-            <hr>
-            <br>
-            <p class="p-social">Redes Sociais</p>
-            <br>
-            <ul class="icons">
-              <li><a href="https://www.instagram.com/4zero4oficial" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Instagram da Banda 4zero4!">
-                  <i class="fi fi-brands-instagram"></i>
-                </a></li>
-              <li><a href="https://www.facebook.com/sampapoppunk" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Facebook da Banda 4zero4!">
-                  <i class="fi fi-brands-facebook"></i>
-                </a></li>
-              <li><a href="https://www.youtube.com/@4zero4oficial" target="_blank" rel="noopener noreferrer" aria-label="Abrir o YouTube da Banda 4zero4!">
-                  <i class="fi fi-brands-youtube"></i>
-                </a></li>
-              <li><a href="https://open.spotify.com/intl-pt/artist/1pDsoJcZYrpLG73qm5ZuId" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Spotify da Banda 4zero4!">
-                  <i class="fi fi-brands-spotify"></i>
-                </a></li>
-              <li><a href="https://deezer.page.link/8NH46yztFd6fRKi87" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Deezer da Banda 4zero4!">
-                  <i class="fi fi-brands-deezer"></i>
-                </a></li>
-              <li><a href="https://music.apple.com/br/artist/4zero4/1750011489" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Apple Music da Banda 4zero4!">
-                  <i class="fi fi-brands-apple"></i>
-                </a></li>
-            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      <p> © 2025. TODOS OS DIREITOS RESERVADOS</p>
-      <p>DESENVOLVIDO POR <a href="https://bio.site/lucascode" target="_blank">LUCAS CODE</a></p>
-    </footer>
-  </main>
-  <script src="./src/js/menu.js"></script>
-  <script src="./src/js/reveal.js"></script>
-  <script src="./src/js/gallery.js"></script>
-  <script src="./src/js/form.js"></script>
-</body>
-
+      </section>
+      <footer>
+        <p>© 2025. TODOS OS DIREITOS RESERVADOS</p>
+        <p>
+          DESENVOLVIDO POR
+          <a href="https://bio.site/lucascode" target="_blank">LUCAS CODE</a>
+        </p>
+      </footer>
+    </main>
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/reveal.js"></script>
+    <script src="./src/js/gallery.js"></script>
+    <script src="./src/js/form.js"></script>
+  </body>
 </html>

@@ -143,8 +143,12 @@ h2.title-section {
   font-size: var(--fs-display-sm);
   color: var(--color-text-white);
   letter-spacing: 3px;
-  text-shadow: 2px 2px 4px var(--color-bg), 4px 4px 6px var(--color-bg);
-  transition: transform var(--transition-medium), color var(--transition-medium);
+  text-shadow:
+    2px 2px 4px var(--color-bg),
+    4px 4px 6px var(--color-bg);
+  transition:
+    transform var(--transition-medium),
+    color var(--transition-medium);
 }
 
 /* ------------------------------
@@ -198,7 +202,9 @@ header {
     .nav-ul a {
       color: var(--color-text-primary);
       -webkit-text-stroke: 1.4px var(--color-primary);
-      text-shadow: 2px 2px 4px #000000, 4px 4px 6px #00000080;
+      text-shadow:
+        2px 2px 4px #000000,
+        4px 4px 6px #00000080;
     }
 
     .nav-links a {
@@ -206,7 +212,9 @@ header {
       padding-top: 17px;
       font-size: 1rem;
       color: var(--color-primary);
-      text-shadow: 1px 1px 3px #000000, 2px 2px 4px #00000080;
+      text-shadow:
+        1px 1px 3px #000000,
+        2px 2px 4px #00000080;
     }
 
     .nav-ul a:hover {
@@ -358,7 +366,9 @@ section#home {
     h2 {
       color: var(--color-text-white);
       text-transform: uppercase;
-      text-shadow: 2px 2px 4px #000000, 4px 4px 6px #00000080;
+      text-shadow:
+        2px 2px 4px #000000,
+        4px 4px 6px #00000080;
     }
 
     h1 {
@@ -429,7 +439,9 @@ section#banda {
   background-size: 80%;
   background-position: center;
   opacity: 0;
-  transition: opacity 3s ease-in-out, background-position 3s ease-in-out;
+  transition:
+    opacity 3s ease-in-out,
+    background-position 3s ease-in-out;
   will-change: opacity, background-position;
 
   &.reveal {
@@ -447,7 +459,9 @@ section#banda {
       letter-spacing: 1px;
       word-spacing: 2px;
       text-align: left;
-      text-shadow: 1px 1px 2px #000000cc, 2px 2px 3px #00000066;
+      text-shadow:
+        1px 1px 2px #000000cc,
+        2px 2px 3px #00000066;
     }
   }
 }
@@ -472,7 +486,8 @@ section#integrantes {
       overflow: hidden;
       border-radius: var(--radius-lg);
       box-shadow: 0px 7px 10px #000000cc;
-      transition: transform var(--transition-slow),
+      transition:
+        transform var(--transition-slow),
         box-shadow var(--transition-slow);
       will-change: transform;
 
@@ -485,7 +500,9 @@ section#integrantes {
         height: 100%;
         object-fit: cover;
         scale: 1.2;
-        transition: opacity 0.25s, scale 0.35s;
+        transition:
+          opacity 0.25s,
+          scale 0.35s;
       }
 
       .card_body {
@@ -494,23 +511,27 @@ section#integrantes {
         display: flex;
         flex-direction: column;
         transform: translateZ(20px);
-        transition: opacity 0.25s, translate 0.25s;
+        transition:
+          opacity 0.25s,
+          translate 0.25s;
 
         &::before {
           content: "";
           position: absolute;
           inset: 13px;
-          border: 2px solid var(--color-primary);
-          border-radius: var(--radius-md);
+          /* border: 2px solid white;
+          border-radius: var(--radius-md); */
           opacity: 0;
           scale: 1.25;
-          transition: opacity 0.25s, scale 0.25s;
+          transition:
+            opacity 0.25s,
+            scale 0.25s;
         }
 
         .card_social {
           position: absolute;
-          top: 38px;
-          left: 30px;
+          top: 15px;
+          right: 15px;
           display: flex;
           flex-direction: column;
           gap: 8px;
@@ -540,10 +561,12 @@ section#integrantes {
             padding: 0;
             color: var(--color-primary);
             text-decoration: none;
-            background-color: transparent;
+            background-color: white;
             border: 2px solid var(--color-primary);
             border-radius: var(--radius-round);
-            box-shadow: 2px 4px 6px #00000080, 2px 4px 6px #00000000;
+            box-shadow:
+              2px 4px 6px #00000080,
+              2px 4px 6px #00000000;
             transition: all var(--transition-medium);
 
             &:hover,
@@ -556,9 +579,10 @@ section#integrantes {
             }
 
             i {
-              font-size: 1.3rem;
+              font-size: 1rem;
               line-height: 0;
-              transition: transform var(--transition-medium),
+              transition:
+                transform var(--transition-medium),
                 color var(--transition-medium);
             }
           }
@@ -568,13 +592,17 @@ section#integrantes {
       .card_title,
       .card_subtitle {
         font-family: var(--font-heading);
-        color: var(--color-primary);
+        color: var(--color-text-white);
         letter-spacing: 2px;
         text-transform: uppercase;
-        -webkit-text-stroke: 0.9px var(--color-text-white);
-        text-shadow: 1px 1px 3px #000000, 2px 2px 4px #00000080;
+        -webkit-text-stroke: 1.6px var(--color-primary);
+        text-shadow:
+          1px 1px 3px #000000,
+          2px 2px 4px #00000080;
         opacity: 0;
-        transition: opacity 0.25s, translate 0.25s;
+        transition:
+          opacity 0.25s,
+          translate 0.25s;
       }
 
       .card_title {
@@ -620,7 +648,9 @@ section#discografia {
     font-family: var(--font-body);
     font-size: var(--fs-lg);
     color: var(--color-text-white);
-    text-shadow: 1px 1px 2px #000000cc, 2px 2px 3px #00000066;
+    text-shadow:
+      1px 1px 2px #000000cc,
+      2px 2px 3px #00000066;
   }
 
   .wrapper {
@@ -704,7 +734,9 @@ section#discografia {
           color: var(--color-primary);
           letter-spacing: 2px;
           -webkit-text-stroke: 1px var(--color-text-white);
-          text-shadow: 1px 1px 3px #000000, 2px 2px 4px #00000080;
+          text-shadow:
+            1px 1px 3px #000000,
+            2px 2px 4px #00000080;
         }
 
         p {
@@ -1183,7 +1215,9 @@ section#contato {
             background: none;
             border: 2px solid #ffffff00;
             box-shadow: none;
-            transition: color 0.25s, border 0.25s;
+            transition:
+              color 0.25s,
+              border 0.25s;
           }
 
           &:hover:before,
@@ -1368,7 +1402,9 @@ footer {
 .js-reveal-from-bottom {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
   will-change: opacity, transform;
 }
 
