@@ -8,7 +8,7 @@
 
 </div>
 
-**Website da banda 4zero4!**, projetado em formato OnePage, com o objetivo de fortalecer a presença digital da banda, centralizando todas as informações principais e meios de contatos em uma navegação fluida e intuitiva.
+**Website da banda 4zero4!**, projetado em formato One Page, com o objetivo de fortalecer a presença digital da banda, centralizando todas as informações principais e meios de contatos em uma navegação fluida e intuitiva.
 
 <p align="center">
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -19,10 +19,9 @@
 
 <h2 id="projeto">PROJETO</h2>
 
-O objetivo desta refatoração (v2.0) foi transformar um código de iniciante em um **case de nível profissional**, aplicando as melhores práticas de desenvolvimento front-end, focado em **Performance, Acessibilidade (A11y) e SEO Técnico**, conforme minha expansão de conhecimentos e habilidades técnicas na programação.
+O objetivo desta refatoração (v2.0) foi transformar um código de iniciante em um **case de nível profissional**, aplicando as melhores práticas de desenvolvimento front-end, focado em **performance, acessibilidade (A11y) e SEO técnico**, conforme minha expansão de conhecimentos e habilidades técnicas na programação.
 
 - 🌐 <a href="https://4zero4.vercel.app/">Acesse o Website</a>
-- 🖼️ <a href="https://www.canva.com/design/DAGY7iketpE/JNfAb-wEfukJ3xBHZ62Iew/view?utm_content=DAGY7iketpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h52de8cf561">Prototipagem do Projeto</a>
 
 <h2 id="funcionalidades">FUNCIONALIDADES</h2>
 
@@ -63,6 +62,14 @@ O objetivo desta refatoração (v2.0) foi transformar um código de iniciante em
 │   │       ├── gallery.js      # Código JS para funcionalidade da galeria de fotos
 │   │       ├── menu.js         # Código JS para funcionalidade do menu e header
 │   │       └── reveal.js       # Código JS para funcionalidade do reveal do conteúdo
+│   ├── 📁 dist
+│   │   ├── 📂 css
+│   │   │   └── style.min.css   # Código CSS minificado
+│   │   └── 📂 js
+│   │       ├── form.min.js     # Código JS para funcionalidade do formulário minificado
+│   │       ├── gallery.min.js  # Código JS para funcionalidade da galeria de fotos minificado
+│   │       ├── menu.min.js     # Código JS para funcionalidade do menu e header minificado
+│   │       └── reveal.min.js   # Código JS para funcionalidade do reveal do conteúdo minificado
 │   └── index.html              # Página principal
 ├── README.md                   # Documentação
 └── LICENSE                     # Licença
