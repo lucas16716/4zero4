@@ -21,7 +21,7 @@
 
 <h2 id="projeto">PROJETO</h2>
 
-Website oficial da banda 4zero4!, desenvolvido em formato One Page para centralizar informações, fortalecer a presença digital e conectar fãs à energia do Punk Rock. O projeto foi completamente refatorado na v2.0, elevando o código a um padrão profissional com foco em performance, acessibilidade e SEO técnico.
+Website oficial da banda 4zero4!, desenvolvido em formato One Page para centralizar informações, fortalecer a presença digital e conectar fãs à energia do Punk Rock. O projeto foi completamente refatorado antes do lançamento final, elevando o código a um padrão profissional com foco em performance, acessibilidade e SEO técnico.
 
 🌐 [Acesse o website](https://4zero4.vercel.app/)
 
