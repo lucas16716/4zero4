@@ -9,6 +9,7 @@
 [![Version](https://img.shields.io/badge/versão-1.0.0-e8e4de?style=flat-square&labelColor=FF69B4&color=1c1b2e)]()&nbsp;
 [![Finalidade](https://img.shields.io/badge/finalidade-freelance-e8e4de?style=flat-square&labelColor=3437e6&color=1c1b2e)]()&nbsp;
 [![Licença](https://img.shields.io/badge/licença-personalizada-e8e4de?style=flat-square&labelColor=ef4444&color=1c1b2e)](./LICENSE)
+![GitHub Repo stars](https://img.shields.io/github/stars/lucas16716/4zero4?style=social)
 
 </div>
 
