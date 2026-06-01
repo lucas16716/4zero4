@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Package manager files
+.pnpm-store/
+.npm/
+
+# Build outputs
+dist/
+*.log
