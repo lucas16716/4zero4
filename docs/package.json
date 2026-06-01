@@ -9,5 +9,6 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1"
+    "@vercel/speed-insights": "latest"
   }
 }
