@@ -4,7 +4,7 @@
 
 **Website oficial da banda 4zero4!**
 
-*One Page com foco em presença digital*
+*Experiência digital focada na retenção e engajamento, com centralização dos principais canais e infos da banda*
 
 [![Version](https://img.shields.io/badge/versão-1.0.0-e8e4de?style=flat-square&labelColor=FF69B4&color=1c1b2e)]()&nbsp;
 [![Finalidade](https://img.shields.io/badge/finalidade-freelance-e8e4de?style=flat-square&labelColor=3437e6&color=1c1b2e)]()&nbsp;
